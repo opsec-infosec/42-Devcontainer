@@ -4,14 +4,14 @@ services:
   development:
     command: /bin/sh -c "while sleep 1000; do :; done"
     build:
-      context: .
+      context: ..
       dockerfile: Dockerfile
     volumes:
       # Update this to wherever you want VS Code to mount the folder of your project
-      - .:/home/vscode
+      - ..:/home/vscode
       
     env_file:
-      - .devcontainer/devcontainer.env
+      - .devcontainer.env
 
     ports:
       - '2222:22'

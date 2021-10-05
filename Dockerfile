@@ -38,6 +38,7 @@ WORKDIR /home/vscode/
 
 # Copy application code to api directory
 COPY --chown=vscode:vscode . .
+#COPY --chown=vscode:vscode ./src/ /home/vscode/src/
 
 WORKDIR /home/vscode/src/
 
