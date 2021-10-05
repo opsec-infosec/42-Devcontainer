@@ -42,6 +42,7 @@ A sample helloworld.c program is available to verify the debugger and enviroment
 
 ## git 
 You should remove the .git folder on the host machine so you can push to your own repository.
+rm -rf .git in the base directory of the cloned repository.
 
 You should also make your own .git ignore files in each of your project directories to exclude files from your repository.  For example a.out, .DS_Store, *.dSYM
 
