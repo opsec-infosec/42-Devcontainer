@@ -31,6 +31,14 @@ In order to use this devcontainer you must install the following on your machine
 To run the devcontainer, open visual studio, hit F1, Remote-Containers: Rebuild and Reopen in Container
 This will build the devcontainer with all the requirments for developing in 42
 
+## 42 Header
+Open the 42.header.env file and change the user to you login name
+
+example:
+USER=dfurneau
+
+This will create a header for dfurneau.  Change the dfurneau to your user login name.
+
 ## User and Directory Structure
 The directory opened (workspac) in vscode will be located under /home/vscode/src
 

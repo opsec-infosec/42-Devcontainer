@@ -12,6 +12,7 @@ services:
       
     env_file:
       - .devcontainer.env
+      - ../42header.env
 
     ports:
       - '2222:22'
