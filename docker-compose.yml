@@ -11,7 +11,7 @@ services:
       - .:/home/vscode
       
     env_file:
-      - .devcontianer/devcontainer.env
+      - .devcontainer/devcontainer.env
 
     ports:
       - '2222:22'
