@@ -3,7 +3,8 @@
 .cache
 .bash_history
 a.out
-Cursus
+!helloworld.c
+Cursus/
 .vscode-server
 
 
