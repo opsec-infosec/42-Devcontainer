@@ -1,5 +1,5 @@
 #################
-# Tesseract Build
+# 42 Devcontainer
 
 FROM debian:latest
 
@@ -7,9 +7,9 @@ FROM debian:latest
 ENV APT_KEY_DONT_WARN_ON_DANGEROUS_USAGE=DontWarn
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN  apt-get update --no-install-recommends -y
+RUN  apt-get update --no-install-recommends --no-cache-dir -y
 
-RUN apt-get install --no-install-recommends\
+RUN apt-get install --no-install-recommends --no-cache-dir \
     'build-essential' \
     "gdb" \
     'automake' \
@@ -23,9 +23,10 @@ RUN apt-get install --no-install-recommends\
     'unzip' \
     'python3' \
     'python3-pip' \
-    'dialog' -y
-
-# apt-get install automake ca-certificates g++ git libtool libleptonica-dev make pkg-config
+    'dialog' -y \
+    && apt-get clean autoclean \
+    && apt-get autoremove --yes \
+    && rm -rf /var/lib/{apt,dpkg,cache,log}/ 
 
 RUN python3 -m pip install --upgrade pip setuptools
 RUN python3 -m pip install norminette
@@ -36,7 +37,7 @@ RUN mkdir -p /home/vscode/src && chown -R vscode:vscode /home/vscode
 USER vscode
 WORKDIR /home/vscode/
 
-# Copy application code to api directory
+# Copy root code to /home/vscode directory
 COPY --chown=vscode:vscode . .
 
 WORKDIR /home/vscode/src/
