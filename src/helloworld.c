@@ -12,7 +12,8 @@
 
 #include <stdio.h>
 
-int	main(void) {
+int	main(void) 
+{
 	printf(("Welcome to 42\n"));
 	printf("Devcontainer with norminette from opinfosec\n");
 	return (0);
