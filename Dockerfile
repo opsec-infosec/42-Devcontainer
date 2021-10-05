@@ -31,10 +31,10 @@ RUN python3 -m pip install --upgrade pip setuptools
 RUN python3 -m pip install norminette
 
 RUN adduser --system --group --home /home/vscode  vscode && usermod -s /bin/bash vscode
-RUN mkdir -p /home/vscode/src && chown -R vscode:vscode /home/vscode/
+RUN mkdir -p /home/vscode/src && chown -R vscode:vscode /home/vscode
 
-WORKDIR /home/vscode/
 USER vscode
+WORKDIR /home/vscode/
 
 # Copy application code to api directory
 COPY --chown=vscode:vscode . .
