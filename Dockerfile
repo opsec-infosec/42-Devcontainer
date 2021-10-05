@@ -35,12 +35,12 @@ RUN adduser --system --group --home /home/vscode  vscode && usermod -s /bin/bash
 RUN mkdir -p /home/vscode/src && chown -R vscode:vscode /home/vscode
 
 USER vscode
-WORKDIR /home/vscode/
+WORKDIR /home/vscode
 
 # Copy root code to /home/vscode directory
 COPY --chown=vscode:vscode . .
 
-WORKDIR /home/vscode/src/
+WORKDIR /home/vscode/src
 
 ENV DEBIAN_FRONTEND=dialog
 
