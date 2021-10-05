@@ -1,0 +1,12 @@
+Updating C/C++ dependencies...
+
+Downloading package 'C/C++ language components (Linux / x86_64)' (11348 KB)  Done!
+Downloading package 'ClangFormat (Linux / x86_64)' (868 KB)  Done!
+Downloading package 'OpenDebugAD7 (Linux x64)' (32229 KB)  Done!
+
+Installing package 'C/C++ language components (Linux / x86_64)'
+Installing package 'ClangFormat (Linux / x86_64)'
+Installing package 'OpenDebugAD7 (Linux x64)'
+
+Finished installing dependencies
+

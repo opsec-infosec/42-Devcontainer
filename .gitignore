@@ -1,0 +1,5 @@
+# Development Environment
+.DS_Store
+.cache
+.bash_history
+a.out

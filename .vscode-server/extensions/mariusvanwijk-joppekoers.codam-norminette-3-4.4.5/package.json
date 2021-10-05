@@ -1,0 +1,81 @@
+{
+	"name": "codam-norminette-3",
+	"displayName": "42 Norminette Highlighter (3.x)",
+	"description": "42 Norminette decorator for VSCode",
+	"version": "4.4.5",
+	"publisher": "MariusvanWijk-JoppeKoers",
+	"license": "MIT",
+	"engines": {
+		"vscode": "^1.35.0"
+	},
+	"categories": [
+		"Visualization",
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"repository": "https://github.com/Mariusmivw/vscode-42-norminette-3-highlighter",
+	"icon": "img/42.png",
+	"main": "./out/extension",
+	"scripts": {
+		"vscode:prepublish": "tsc -p ./",
+		"compile": "tsc -watch -p ./"
+	},
+	"dependencies": {
+		"ignore": "^5.1.8"
+	},
+	"devDependencies": {
+		"@types/node": "^14.14.31",
+		"@types/vscode": "^1.35.0",
+		"typescript": "^4.1.5",
+		"vsce": "^1.99.0"
+	},
+	"contributes": {
+		"commands": [
+			{
+				"command": "codam-norminette-3.enable",
+				"title": "Norminette Highlighter: Enable"
+			},
+			{
+				"command": "codam-norminette-3.disable",
+				"title": "Norminette Highlighter: Disable"
+			},
+			{
+				"command": "codam-norminette-3.toggle",
+				"title": "Norminette Highlighter: Toggle"
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "42 Norminette",
+			"properties": {
+				"codam-norminette-3.ignoreErrors": {
+					"type": "array",
+					"uniqueItems": true,
+					"items": {
+						"type": "string"
+					},
+					"default": [],
+					"description": "List of norminette errors to not highlight, e.g.: WRONG_SCOPE_COMMENT"
+				},
+				"codam-norminette-3.command": {
+					"type": "string",
+					"default": "norminette",
+					"description": "Specifies norminette command"
+				},
+				"codam-norminette-3.regex": {
+					"type": "string",
+					"default": "\\.[ch]$",
+					"description": "Specifies which files to run norminette on \n defaults to \\.[ch]$"
+				}
+			}
+		}
+	},
+	"__metadata": {
+		"id": "500052d5-cab3-494d-bce5-2bff0d69059b",
+		"publisherId": "3c650d08-bd6a-4175-be5c-58fcb9f95479",
+		"publisherDisplayName": "Marius van Wijk - Joppe Koers",
+		"installedTimestamp": 1633420074570
+	}
+}

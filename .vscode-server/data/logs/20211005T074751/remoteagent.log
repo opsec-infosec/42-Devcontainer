@@ -1,0 +1,40 @@
+[2021-10-05 07:47:51.503] [remoteagent] [info] 
+
+*
+* Visual Studio Code Server
+*
+* Reminder: You may only use this software with Visual Studio family products,
+* as described in the license https://aka.ms/vscode-remote/license
+*
+
+
+[2021-10-05 07:47:51.503] [remoteagent] [info] Extension host agent started.
+[2021-10-05 07:47:51.562] [remoteagent] [info] [::ffff:127.0.0.1][35447d5c][ManagementConnection] New connection established.
+[2021-10-05 07:47:51.612] [remoteagent] [info] [::ffff:127.0.0.1][7f0e38b8][ExtensionHostConnection] New connection established.
+[2021-10-05 07:47:51.627] [remoteagent] [info] [::ffff:127.0.0.1][7f0e38b8][ExtensionHostConnection] <237> Launched Extension Host Process.
+[2021-10-05 07:47:52.259] [remoteagent] [info] Installing extension: damiankoper.gdb-debug
+[2021-10-05 07:47:52.263] [remoteagent] [info] Installing extension: kube.42header
+[2021-10-05 07:47:52.279] [remoteagent] [info] Installing extension: mariusvanwijk-joppekoers.codam-norminette-3
+[2021-10-05 07:47:52.294] [remoteagent] [info] Installing extension: ms-vscode.cpptools
+[2021-10-05 07:47:53.032] [remoteagent] [info] Downloaded extension: damiankoper.gdb-debug /home/vscode/.vscode-server/extensionsCache/damiankoper.gdb-debug-1.0.7
+[2021-10-05 07:47:53.051] [remoteagent] [info] Downloaded extension: kube.42header /home/vscode/.vscode-server/extensionsCache/kube.42header-0.42.9
+[2021-10-05 07:47:53.059] [remoteagent] [info] Downloaded extension: mariusvanwijk-joppekoers.codam-norminette-3 /home/vscode/.vscode-server/extensionsCache/mariusvanwijk-joppekoers.codam-norminette-3-4.4.5
+[2021-10-05 07:47:53.062] [remoteagent] [info] Downloaded extension: ms-vscode.cpptools /home/vscode/.vscode-server/extensionsCache/ms-vscode.cpptools-1.6.0
+[2021-10-05 07:47:54.560] [remoteagent] [info] Extracted extension to /home/vscode/.vscode-server/extensions/.d99bcb08-a7d3-4943-8b05-aec3fc2e23dc: mariusvanwijk-joppekoers.codam-norminette-3
+[2021-10-05 07:47:54.589] [remoteagent] [info] Renamed to /home/vscode/.vscode-server/extensions/mariusvanwijk-joppekoers.codam-norminette-3-4.4.5
+[2021-10-05 07:47:54.599] [remoteagent] [info] Extracting completed. mariusvanwijk-joppekoers.codam-norminette-3
+[2021-10-05 07:47:54.608] [remoteagent] [info] Extension installed successfully: mariusvanwijk-joppekoers.codam-norminette-3
+[2021-10-05 07:47:56.094] [remoteagent] [info] Extracted extension to /home/vscode/.vscode-server/extensions/.fb846450-7deb-45f0-8e68-b6cd476e341c: kube.42header
+[2021-10-05 07:47:56.109] [remoteagent] [info] Renamed to /home/vscode/.vscode-server/extensions/kube.42header-0.42.9
+[2021-10-05 07:47:56.116] [remoteagent] [info] Extracting completed. kube.42header
+[2021-10-05 07:47:56.122] [remoteagent] [info] Extension installed successfully: kube.42header
+[2021-10-05 07:47:56.818] [remoteagent] [info] Extracted extension to /home/vscode/.vscode-server/extensions/.2b80ecae-39cd-4dfa-86c7-4648b9a27cea: ms-vscode.cpptools
+[2021-10-05 07:47:56.838] [remoteagent] [info] Renamed to /home/vscode/.vscode-server/extensions/ms-vscode.cpptools-1.6.0
+[2021-10-05 07:47:56.845] [remoteagent] [info] Extracting completed. ms-vscode.cpptools
+[2021-10-05 07:47:56.854] [remoteagent] [info] Extension installed successfully: ms-vscode.cpptools
+[2021-10-05 07:48:03.839] [remoteagent] [info] Extracted extension to /home/vscode/.vscode-server/extensions/.de0caa48-a6b2-47f9-b89f-a8b1be4fc4f8: damiankoper.gdb-debug
+[2021-10-05 07:48:03.854] [remoteagent] [info] Renamed to /home/vscode/.vscode-server/extensions/damiankoper.gdb-debug-1.0.7
+[2021-10-05 07:48:03.861] [remoteagent] [info] Extracting completed. damiankoper.gdb-debug
+[2021-10-05 07:48:03.869] [remoteagent] [info] Extension installed successfully: damiankoper.gdb-debug
+[2021-10-05 07:52:33.819] [remoteagent] [info] [::ffff:127.0.0.1][35447d5c][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[2021-10-05 07:52:34.888] [remoteagent] [info] [::ffff:127.0.0.1][7f0e38b8][ExtensionHostConnection] <237> Extension Host Process exited with code: 0, signal: null.
