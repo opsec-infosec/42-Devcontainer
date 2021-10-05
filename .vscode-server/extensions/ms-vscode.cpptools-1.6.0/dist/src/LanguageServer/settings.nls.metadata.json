@@ -1,9 +1,0 @@
-{
-	"messages": [
-		"Code formatting is using settings from .editorconfig instead of .clang-format. For more information, see the documentation for the `Default` value of the 'C_Cpp.formatting' setting."
-	],
-	"keys": [
-		"editorconfig.default.behavior"
-	],
-	"filePath": "src\\LanguageServer\\settings"
-}

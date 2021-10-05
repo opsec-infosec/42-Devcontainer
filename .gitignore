@@ -3,5 +3,6 @@
 .cache
 .bash_history
 a.out
-!.vscode-server/Machine/settings.json
-.vscode-server/*
+! .vscode-server/data/Machine/settings.json
+.vscode-server
+
