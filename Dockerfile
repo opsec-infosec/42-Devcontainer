@@ -9,7 +9,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN  apt-get update --no-install-recommends -y
 
-RUN apt-get install --no-install-recommends --no-cache-dir \
+RUN apt-get install --no-install-recommends \
     'build-essential' \
     "gdb" \
     'automake' \
