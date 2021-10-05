@@ -7,7 +7,7 @@ FROM debian:latest
 ENV APT_KEY_DONT_WARN_ON_DANGEROUS_USAGE=DontWarn
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN  apt-get update --no-install-recommends --no-cache-dir -y
+RUN  apt-get update --no-install-recommends -y
 
 RUN apt-get install --no-install-recommends --no-cache-dir \
     'build-essential' \
