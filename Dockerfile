@@ -11,6 +11,7 @@ RUN apt-get update --no-install-recommends -y
 
 RUN apt-get install --no-install-recommends \
     'build-essential' \
+    "valgrind" \
     "gdb" \
     'automake' \
     'make' \
@@ -25,7 +26,9 @@ RUN apt-get install --no-install-recommends \
     'python3-pip' \
     'git' \
     'openssh-server' \
-    'dialog' -y \
+    'dialog' \
+    'llvm' \
+    'clang' -y \
     && apt-get clean autoclean \
     && apt-get autoremove --yes \
     && rm -rf /var/lib/{apt,dpkg,cache,log}/ 
