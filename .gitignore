@@ -7,7 +7,7 @@ a.out
 Cursus/
 .vscode-server
 .gitconfig
-.ssh/*
+.ssh/
 
 
 
