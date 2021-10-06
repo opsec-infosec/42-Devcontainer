@@ -51,5 +51,9 @@ A sample helloworld.c program is available to verify the debugger and enviroment
 ## git 
 You should make your own .git ignore files in each of your project directories to exclude files from your repository.  For example a.out, .DS_Store, *.dSYM
 
+## SSH Keys
+You can copy your id_rsa and id_rsa.pub keys from your 42 account and copy them into the .ssh directory from this cloned repo.
+This will allow you to git your repo from 42 so you can work on it.
+
 
 

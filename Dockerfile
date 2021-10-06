@@ -24,6 +24,7 @@ RUN apt-get install --no-install-recommends \
     'python3' \
     'python3-pip' \
     'git' \
+    'openssh-server' \
     'dialog' -y \
     && apt-get clean autoclean \
     && apt-get autoremove --yes \
