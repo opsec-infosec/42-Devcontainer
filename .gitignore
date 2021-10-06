@@ -3,7 +3,6 @@
 .cache
 .bash_history
 a.out
-!helloworld.c
 Cursus/
 .vscode-server
 .gitconfig

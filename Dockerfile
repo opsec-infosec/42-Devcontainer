@@ -43,7 +43,8 @@ USER vscode
 WORKDIR /home/vscode
 
 # Copy root code to /home/vscode directory
-COPY --chown=vscode:vscode . .
+COPY --chown=vscode:vscode . .  
+RUN ln -s /home/vscode/src/helloworld.c /home/vscode/src/Cursus/helloworld.c
 
 WORKDIR /home/vscode/src
 
