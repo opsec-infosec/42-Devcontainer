@@ -23,6 +23,7 @@ RUN apt-get install --no-install-recommends \
     'unzip' \
     'python3' \
     'python3-pip' \
+    'git' \
     'dialog' -y \
     && apt-get clean autoclean \
     && apt-get autoremove --yes \
