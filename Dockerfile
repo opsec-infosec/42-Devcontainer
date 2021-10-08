@@ -46,7 +46,6 @@ WORKDIR /home/vscode
 # Copy root code to /home/vscode directory
 #COPY --chown=vscode:vscode . .  
 COPY . .
-RUN git rm -rf --cached . && git add .
 
 WORKDIR /home/vscode/src
 
