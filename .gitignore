@@ -3,7 +3,11 @@
 .cache
 .bash_history
 a.out
+42header.env
 Cursus/
+/src/helloworld
+/src/helloworld.c
+/src/readme.txt
 .vscode-server
 .gitconfig
 .ssh/
