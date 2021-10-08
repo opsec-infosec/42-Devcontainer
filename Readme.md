@@ -32,7 +32,7 @@ To run the devcontainer, open visual studio, hit F1, Remote-Containers: Rebuild 
 This will build the devcontainer with all the requirments for developing in 42
 
 ## Running in Windows
-When launching the devcontainer, you may see
+When launching the devcontainer, you may see some files that are changed.  To avoid problems with git and pushing your changes to your own repo, you should discard the changes after staring the devcontainer.  This should only need to be done one time.
 
 ## Root!
 The user inside the container is root.  With root user comes gret responsibility!! As this is a container, if you mess up (ie.. rm -rf /), the container will rebuild, but any files you share between the host and the container (/home/vscode/src) will be deleted on your host.  So always have a backup plan for your files when working in this devcontainer. YOU HAVE BEEN WARNED, Don't come crying to me because you didn't read this readme file.
