@@ -40,11 +40,12 @@ RUN python3 -m pip install norminette
 RUN adduser --system --group --home /home/vscode  vscode && usermod -s /bin/bash vscode
 RUN mkdir -p /home/vscode/src && chown -R vscode:vscode /home/vscode
 
-USER vscode
+#USER vscode
 WORKDIR /home/vscode
 
 # Copy root code to /home/vscode directory
-COPY --chown=vscode:vscode . .  
+#COPY --chown=vscode:vscode . .  
+COPY . .
 
 WORKDIR /home/vscode/src
 
