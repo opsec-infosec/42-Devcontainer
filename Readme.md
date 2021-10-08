@@ -3,9 +3,9 @@ This is a devcontainer for 42 coding with Visual Studio and docker
 
 ## Visual Studio Extension
 * C/C++ |  InteliSense, Debugging and Code Browsing
-* 42 Header | 42 header for VSCode by kube
-* 42 Norminette Highlighter (3.x) | Norminette for 42 v3.3.32 by Marius
-* GDB Debug | GDB Debug extension by DamianKoper
+* 42 Header | [42 header for VSCode](https://github.com/kube/vscode-42header) by kube
+* 42 Norminette Highlighter (3.x) | [42 Norminette Highlighter (3.x)](https://github.com/Mariusmivw/vscode-42-norminette-3-highlighter/) by Marius and Joppe
+* GDB Debug | [GDB Debug extension](https://github.com/damiankoper/vscode-gdb-debug) by DamianKoper
 
 ## Installed Linux Packages
 * gcc
