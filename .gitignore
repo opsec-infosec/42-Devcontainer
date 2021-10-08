@@ -10,7 +10,7 @@ Cursus/
 /src/readme.txt
 .vscode-server
 .gitconfig
-.ssh/
+.ssh/*
 
 
 
