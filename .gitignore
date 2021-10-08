@@ -11,7 +11,7 @@ Cursus/
 .vscode-server
 .gitconfig
 .ssh/*
-
+!.ssh/readme.txt
 
 
 
