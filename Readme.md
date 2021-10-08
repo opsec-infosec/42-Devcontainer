@@ -59,7 +59,11 @@ You should make your own .git ignore files in each of your project directories t
 
 ## SSH Keys
 You can copy your id_rsa and id_rsa.pub keys from your 42 account and copy them into the .ssh directory from this cloned repo.
-This will allow you to git your repo from 42 so you can work on it.
+This will allow you to git your repo from 42 (on the wireless network) so you can work on it.
 
+Or you can use your own repo, and put your ssh keys in the .ssh directory.  This will allow you to push, commit, and pull from your own github or gitlab repository.
 
+## Feedback and Fixes
+If there are issues or you want something changed in the devcontainer, please let me know by adding an issue on the repo.  Even better come up with a fix or solution, and do a pull request (PR) and I will review and merge the request
 
+--opinfosec (RavenClaw Rocks!!)
