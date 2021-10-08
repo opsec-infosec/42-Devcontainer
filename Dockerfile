@@ -29,7 +29,7 @@ RUN apt-get install --no-install-recommends \
     'dialog' \
     'llvm' \
     'clang' \
-	'libbsd-dev-y' -y \
+	'libbsd-dev' -y \
     && apt-get clean autoclean \
     && apt-get autoremove --yes \
     && rm -rf /var/lib/{apt,dpkg,cache,log}/ 
