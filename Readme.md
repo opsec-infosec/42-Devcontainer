@@ -31,6 +31,9 @@ In order to use this devcontainer you must install the following on your machine
 To run the devcontainer, open visual studio, hit F1, Remote-Containers: Rebuild and Reopen in Container
 This will build the devcontainer with all the requirments for developing in 42
 
+# Adding files from host
+There may be some issues when adding files to the directory from you host outside the container.  Because you may be running as administrator or root from you host machine, the file permissions of the files will be administrator or root which will cause the files in the container to be root.  The user inside the container is vscode, which maps to user outside the container.  If you add files outside the container while running the devcontainer, you may have to rebuild the docker image which should fix the file permissions.  To do this from vscode, press F1, and rebuild and reopen the container.  This will fix the file permissions inside the container and you will have access to the files.
+
 ## 42 Header
 Open the 42.header.env file and change the user to you login name
 

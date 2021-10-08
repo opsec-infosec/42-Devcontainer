@@ -28,7 +28,8 @@ RUN apt-get install --no-install-recommends \
     'openssh-server' \
     'dialog' \
     'llvm' \
-    'clang' -y \
+    'clang' \
+	'libbsd-dev-y' -y \
     && apt-get clean autoclean \
     && apt-get autoremove --yes \
     && rm -rf /var/lib/{apt,dpkg,cache,log}/ 
