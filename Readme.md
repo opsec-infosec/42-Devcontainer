@@ -1,7 +1,7 @@
 # Visual Studio Devcontainer for 42
 This is a devcontainer for 42 coding with Visual Studio and docker
 
-## Visual Studio Extension
+## Visual Studio Extension in Container
 * C/C++ |  InteliSense, Debugging and Code Browsing
 * 42 Header | [42 header for VSCode](https://github.com/kube/vscode-42header) by kube
 * 42 Norminette Highlighter (3.x) | [42 Norminette Highlighter (3.x)](https://github.com/Mariusmivw/vscode-42-norminette-3-highlighter/) by Marius and Joppe
