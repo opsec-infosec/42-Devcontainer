@@ -26,6 +26,14 @@ In order to use this devcontainer you must install the following on your machine
 * Docker for Desktop
 * Visual Studio Code
 
+### Required Extension of VSCode
+* Remote - Containers (Microsoft)
+* Remote - SSH (Microsoft)
+* Remote - SSH: Editing Configuration Files (Microsoft)
+* Remote - WSL (Microsoft)
+* Remote Development (Microsoft)
+* Docker (Microsoft)
+
 ## Running the Devcontainer
 
 To run the devcontainer, open visual studio, hit F1, Remote-Containers: Rebuild and Reopen in Container
