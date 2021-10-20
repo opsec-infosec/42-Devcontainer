@@ -37,18 +37,12 @@ RUN apt-get install --no-install-recommends \
 RUN python3 -m pip install --upgrade pip setuptools
 RUN python3 -m pip install norminette
 
-#RUN adduser --system --group --home /home/vscode  vscode && usermod -s /bin/bash vscode
-#RUN mkdir -p /home/vscode/src 
-# && chown -R vscode:vscode /home/vscode
+RUN mkdir -p /home/vscode/src 
 
-#USER vscode
-#WORKDIR /home/vscode
+WORKDIR /home/vscode
+COPY . .
 
-# Copy root code to /home/vscode directory
-#COPY --chown=vscode:vscode . .  
-#COPY . .
-
-#WORKDIR /home/vscode/src
+WORKDIR /home/vscode/src
 
 ENV DEBIAN_FRONTEND=dialog
 
