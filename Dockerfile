@@ -1,7 +1,7 @@
 #################
 # 42 Devcontainer
 
-FROM debian:latest
+FROM ubuntu:latest
 
 # Suppress an apt-key warning about standard out not being a terminal. Use in this script is safe.
 ENV APT_KEY_DONT_WARN_ON_DANGEROUS_USAGE=DontWarn
@@ -37,17 +37,18 @@ RUN apt-get install --no-install-recommends \
 RUN python3 -m pip install --upgrade pip setuptools
 RUN python3 -m pip install norminette
 
-RUN adduser --system --group --home /home/vscode  vscode && usermod -s /bin/bash vscode
-RUN mkdir -p /home/vscode/src && chown -R vscode:vscode /home/vscode
+#RUN adduser --system --group --home /home/vscode  vscode && usermod -s /bin/bash vscode
+#RUN mkdir -p /home/vscode/src 
+# && chown -R vscode:vscode /home/vscode
 
 #USER vscode
-WORKDIR /home/vscode
+#WORKDIR /home/vscode
 
 # Copy root code to /home/vscode directory
 #COPY --chown=vscode:vscode . .  
-COPY . .
+#COPY . .
 
-WORKDIR /home/vscode/src
+#WORKDIR /home/vscode/src
 
 ENV DEBIAN_FRONTEND=dialog
 
