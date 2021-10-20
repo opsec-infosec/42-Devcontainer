@@ -1,7 +1,7 @@
 #################
 # 42 Devcontainer
 
-FROM ubuntu:latest
+FROM debian:latest
 
 # Suppress an apt-key warning about standard out not being a terminal. Use in this script is safe.
 ENV APT_KEY_DONT_WARN_ON_DANGEROUS_USAGE=DontWarn
