@@ -43,10 +43,12 @@ RUN python3 -m pip install --upgrade pip setuptools && python3 -m pip install no
 RUN sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"  \
 	&& echo 'PROMPT=%B%F{blue}[DEVCONTAINER]%f%b$PROMPT' >> /root/.zshrc
 
-RUN mkdir -p /home/vscode/src 
+RUN mkdir -p /home/vscode/src && mkdir -p /home/vscode/.ssh 
+
+COPY ./.ssh/ /home/vscode/.ssh/
 
 WORKDIR /home/vscode
-COPY . .
+COPY ./src ./
 
 WORKDIR /home/vscode/src
 
