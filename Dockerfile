@@ -40,7 +40,8 @@ RUN apt-get install --no-install-recommends \
     && rm -rf /var/lib/{apt,dpkg,cache,log}/ 
 
 RUN python3 -m pip install --upgrade pip setuptools && python3 -m pip install norminette
-RUN sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+RUN sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"  \
+	&& echo 'PROMPT=%B%F{blue}[DEVCONTAINER]%f%b$PROMPT' >> /root/.zshrc
 
 RUN mkdir -p /home/vscode/src 
 
