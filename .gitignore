@@ -2,6 +2,7 @@
 .DS_Store
 .cache
 .bash_history
+.zsh_history
 a.out
 42header.env
 /src/Cursus/**
