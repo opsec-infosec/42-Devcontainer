@@ -29,13 +29,18 @@ RUN apt-get install --no-install-recommends \
     'dialog' \
     'llvm' \
     'clang' \
-	'libbsd-dev' -y \
+	'libbsd-dev' \
+	'curl' \
+	'wget' \
+	'zsh' \
+	'nano' \
+	'vim' -y \
     && apt-get clean autoclean \
     && apt-get autoremove --yes \
     && rm -rf /var/lib/{apt,dpkg,cache,log}/ 
 
-RUN python3 -m pip install --upgrade pip setuptools
-RUN python3 -m pip install norminette
+RUN python3 -m pip install --upgrade pip setuptools && python3 -m pip install norminette
+RUN sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 
 RUN mkdir -p /home/vscode/src 
 
