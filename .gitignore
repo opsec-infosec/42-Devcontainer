@@ -5,8 +5,7 @@
 a.out
 42header.env
 Cursus/
-/src/helloworld
-/src/helloworld.c
+/src/helloworld*
 /src/readme.txt
 .vscode-server
 .gitconfig
