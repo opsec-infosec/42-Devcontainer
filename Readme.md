@@ -18,6 +18,7 @@ This is a devcontainer for 42 coding with Visual Studio and docker
 * unzip
 * libtool
 * pkg-config
+* Valgrind
 
 
 ## Installation Requirments
