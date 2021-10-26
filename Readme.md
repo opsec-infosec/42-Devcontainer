@@ -1,5 +1,7 @@
 # Visual Studio Devcontainer for 42
-This is a devcontainer for 42 coding with Visual Studio and docker
+This is a devcontainer for 42 coding with Visual Studio and docker.
+Not For Use inside the 42 Labs.  This container is for outside the labs
+on your personal PC's
 
 ## Visual Studio Extension in Container
 * C/C++ |  InteliSense, Debugging and Code Browsing
