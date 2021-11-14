@@ -8,6 +8,7 @@ on your personal PC's
 * 42 Header | [42 header for VSCode](https://github.com/kube/vscode-42header) by kube
 * 42 Norminette Highlighter (3.x) | [42 Norminette Highlighter (3.x)](https://github.com/Mariusmivw/vscode-42-norminette-3-highlighter/) by Marius and Joppe
 * GDB Debug | [GDB Debug extension](https://github.com/damiankoper/vscode-gdb-debug) by DamianKoper
+* Selected Line Count | [Line Count Extenstion](https://github.com/gurumukhi/vscode-extension-line-count) by Ram Gurumukhi 
 
 ## Installed Linux Packages
 * gcc
