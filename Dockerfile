@@ -10,6 +10,8 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update --no-install-recommends -y
 
 RUN apt-get install --no-install-recommends \
+	'man-db' \
+	'less' \
     'build-essential' \
     "valgrind" \
     "gdb" \
