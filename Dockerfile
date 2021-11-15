@@ -51,7 +51,7 @@ RUN mkdir -p /home/vscode/src && mkdir -p /root/.ssh
 COPY ./.ssh/ /root/.ssh/
 
 WORKDIR /home/vscode
-COPY ./src ./
+COPY ./src ./src/
 
 WORKDIR /home/vscode/src
 
