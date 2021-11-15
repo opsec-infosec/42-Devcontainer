@@ -13,6 +13,7 @@ RUN apt-get install --no-install-recommends \
 	'man-db' \
 	'less' \
     'build-essential' \
+	"libtool-bin" \
     "valgrind" \
     "gdb" \
     'automake' \
