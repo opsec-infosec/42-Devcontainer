@@ -28,7 +28,8 @@
         "mariusvanwijk-joppekoers.codam-norminette-3",
         "kube.42header",
         "damiankoper.gdb-debug",
-		"gurumukhi.selected-lines-count"
+		"gurumukhi.selected-lines-count",
+		"ms-vscode.makefile-tools",
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
