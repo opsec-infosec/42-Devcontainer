@@ -27,6 +27,8 @@ on your personal PC's
 
 ## Installation Requirments
 
+--------========== DO NOT INSTALL IN 42 LABS ==========--------
+
 In order to use this devcontainer you must install the following on your machine:
 * Docker for Desktop
 * Visual Studio Code
