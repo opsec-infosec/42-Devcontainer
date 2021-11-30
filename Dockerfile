@@ -39,14 +39,16 @@ RUN apt-get install --no-install-recommends \
 	'nano' \
 	'vim' \
 	'python3-tk' \
-	 'ruby' -y \
+	 'ruby' \
+	 'bc' -y \
     && apt-get clean autoclean \
     && apt-get autoremove --yes \
     && rm -rf /var/lib/{apt,dpkg,cache,log}/
 
 RUN python3 -m pip install --upgrade pip setuptools && python3 -m pip install norminette
 RUN sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"  \
-	&& echo 'PROMPT=%B%F{blue}[DEVCONTAINER]%f%b$PROMPT' >> /root/.zshrc
+	&& echo 'PROMPT=%B%F{blue}[DEVCONTAINER]%f%b$PROMPT' >> /root/.zshrc \
+	&& echo 'PATH=$PATH:/usr/bin' >> /root/.zshrc
 
 RUN mkdir -p /home/vscode/src && mkdir -p /root/.ssh
 
