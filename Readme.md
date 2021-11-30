@@ -1,3 +1,4 @@
+# THIS IS FOR INSTALL ON PERSONAL LAPTOP NOT INSIDE THE LABS
 # Visual Studio Devcontainer for 42
 This is a devcontainer for 42 coding with Visual Studio and docker.
 Not For Use inside the 42 Labs.  This container is for outside the labs
@@ -25,6 +26,8 @@ on your personal PC's
 
 
 ## Installation Requirments
+
+--------========== DO NOT INSTALL IN 42 LABS ==========--------
 
 In order to use this devcontainer you must install the following on your machine:
 * Docker for Desktop
