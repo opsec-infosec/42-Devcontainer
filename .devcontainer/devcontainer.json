@@ -30,7 +30,7 @@
         "damiankoper.gdb-debug",
 		"gurumukhi.selected-lines-count",
 		"ms-vscode.makefile-tools",
-		"tomoki1207.pdf-1.2.0",
+		"mathematic.vscode-pdf",
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
