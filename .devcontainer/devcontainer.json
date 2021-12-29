@@ -26,7 +26,7 @@
 	"extensions": [
         "ms-vscode.cpptools",
         "mariusvanwijk-joppekoers.codam-norminette-3",
-        "kube.42header",
+		"secondfry.42header-long",
         "damiankoper.gdb-debug",
 		"gurumukhi.selected-lines-count",
 		"ms-vscode.makefile-tools",

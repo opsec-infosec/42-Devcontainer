@@ -6,10 +6,10 @@ on your personal PC's
 
 ## Visual Studio Extension in Container
 * C/C++ |  InteliSense, Debugging and Code Browsing
-* 42 Header | [42 header for VSCode](https://github.com/kube/vscode-42header) by kube
+* 42 Header | [42 header for VSCode](https://github.com/kube/vscode-42header) by kube | modified by [secondfry](https://github.com/secondfry/vscode-42header)
 * 42 Norminette Highlighter (3.x) | [42 Norminette Highlighter (3.x)](https://github.com/Mariusmivw/vscode-42-norminette-3-highlighter/) by Marius and Joppe
 * GDB Debug | [GDB Debug extension](https://github.com/damiankoper/vscode-gdb-debug) by DamianKoper
-* Selected Line Count | [Line Count Extenstion](https://github.com/gurumukhi/vscode-extension-line-count) by Ram Gurumukhi 
+* Selected Line Count | [Line Count Extenstion](https://github.com/gurumukhi/vscode-extension-line-count) by Ram Gurumukhi
 
 ## Installed Linux Packages
 * gcc
@@ -69,7 +69,7 @@ You should use the Cursus directory for your projects and create different folde
 
 A sample helloworld.c program is available to verify the debugger and enviroment is running correctly.
 
-## git 
+## git
 You should make your own .git ignore files in each of your project directories to exclude files from your repository.  For example a.out, .DS_Store, *.dSYM
 
 ## SSH Keys
