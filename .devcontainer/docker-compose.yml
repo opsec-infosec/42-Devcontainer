@@ -6,12 +6,18 @@ services:
     build:
       context: ..
       dockerfile: Dockerfile
+
+    security_opt:
+      - seccomp=unconfined
+    cap_add:
+      - SYS_PTRACE
+
     volumes:
       # Update this to wherever you want VS Code to mount the folder of your project
       - ../src:/home/vscode/src
       - ../.bash_history:/root/.bash_history
       - ../.zsh_history:/root/.zsh_history
-      
+
     env_file:
       - .devcontainer.env
       - ../42header.env
@@ -22,4 +28,3 @@ services:
 volumes:
   debug:
     driver: local
-      
