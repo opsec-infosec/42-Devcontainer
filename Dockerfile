@@ -39,8 +39,9 @@ RUN apt-get install --no-install-recommends \
 	'nano' \
 	'vim' \
 	'python3-tk' \
-	 'ruby' \
-	 'bc' -y \
+	'ruby' \
+	'bc' -y \
+    'libreadline6-dev'\
     && apt-get clean autoclean \
     && apt-get autoremove --yes \
     && rm -rf /var/lib/{apt,dpkg,cache,log}/
