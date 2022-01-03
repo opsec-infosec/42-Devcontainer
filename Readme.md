@@ -42,8 +42,8 @@ In order to use this devcontainer you must install the following on your machine
 * Docker (Microsoft)
 
 ## Running the Devcontainer
-
-To run the devcontainer, open visual studio, hit F1, Remote-Containers: Rebuild and Reopen in Container
+Clone this repo into a folder on your machine and open within vscode.
+To run the devcontainer, hit F1, Remote-Containers: Rebuild and Reopen in Container
 This will build the devcontainer with all the requirments for developing in 42
 
 ## Running in Windows
@@ -66,6 +66,8 @@ The directory opened (workspac) in vscode will be located under /home/vscode/src
 The /home/vscode/src container directory is mapped to the /src directory on your host machine.  This means any changes done in the container will be reflected on your host and will be saved locally.
 
 You should use the Cursus directory for your projects and create different folders for each project.. for example /src/Cursus/libft for the libft project.
+
+Once you make a directory for your project... You can open the folder within vscode after running the container, by going to file->open folder .. then go to /home/vscode/src/Cursus/<your project folder>.  Vscode will keep the devcontainer loaded and open the folder.  You can then start coding and making your project files.
 
 A sample helloworld.c program is available to verify the debugger and enviroment is running correctly.
 
