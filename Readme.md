@@ -93,7 +93,11 @@ and take note of the 42-Devcontainer name.  It should be somehthing like 42-devc
   
 To launch into the container, issue the following command: docker exec -it 42-devcontainer_devcontainer_development_1 /bin/zsh
 Assuming that the container name is 42-devcontainer_devcontainer_development_1
-  
+
+## Update the container after cloning
+As there are PR and other updates to this repo, you can update the repo to get the latest changes.  To do this, go to the base folder of the repo you cloned (42-Devcontainer) and execute: git pull
+This will pull the latest changes to the repo onto your local copy.  Reopen the container in VSCode and reopen-rebuild as described in running the devcontainer above.
+ 
 ## Feedback and Fixes
 If there are issues or you want something changed in the devcontainer, please let me know by adding an issue on the repo.  Even better come up with a fix or solution, and do a pull request (PR) and I will review and merge the request
 
