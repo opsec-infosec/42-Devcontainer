@@ -14,7 +14,16 @@
 			"cwd": "${fileDirname}",
 			"environment": [],
 			"externalConsole": false,
-			"MIMode": "lldb",
+			"MIMode": "gdb",
+			"setupCommands": [
+				{
+					"description": "Enable pretty-printing for gdb",
+					"text": "-enable-pretty-printing",
+					"ignoreFailures": true,
+				},
+			],
+			"preLaunchTask": "Build",
+			"miDebuggerPath": "/usr/bin/gdb",
 			"preLaunchTask": "C/C++: gcc build active file"
 		}
 	]
