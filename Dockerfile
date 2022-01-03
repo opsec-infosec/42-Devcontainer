@@ -41,6 +41,7 @@ RUN apt-get install --no-install-recommends \
 	'python3-tk' \
 	'ruby' \
 	'bc' \
+	'htop' \
     'libreadline6-dev' -y \
     && apt-get clean autoclean \
     && apt-get autoremove --yes \
