@@ -40,8 +40,8 @@ RUN apt-get install --no-install-recommends \
 	'vim' \
 	'python3-tk' \
 	'ruby' \
-	'bc' -y \
-    'libreadline6-dev'\
+	'bc' \
+    'libreadline6-dev' -y \
     && apt-get clean autoclean \
     && apt-get autoremove --yes \
     && rm -rf /var/lib/{apt,dpkg,cache,log}/
