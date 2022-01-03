@@ -25,6 +25,8 @@ on your personal PC's
 * libtool
 * pkg-config
 * Valgrind
+* htop
+* libreadline6-dev
 
 
 ## Installation Requirments
