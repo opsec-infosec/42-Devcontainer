@@ -34,6 +34,8 @@ In order to use this devcontainer you must install the following on your machine
 * Visual Studio Code
 
 ### Required Extension of VSCode
+Make sure you have the following extension install within vscode
+
 * Remote - Containers (Microsoft)
 * Remote - SSH (Microsoft)
 * Remote - SSH: Editing Configuration Files (Microsoft)
