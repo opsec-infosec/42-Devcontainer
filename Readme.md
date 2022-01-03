@@ -53,7 +53,7 @@ When launching the devcontainer, you may see some files that are changed.  To av
 The user inside the container is root.  With root user comes with gret responsibility!! As this is a container, if you mess up (ie.. rm -rf /), the container will rebuild, but any files you share between the host and the container (/home/vscode/src) will be deleted on your host.  So always have a backup plan for your files when working in this devcontainer. YOU HAVE BEEN WARNED, Don't come crying to me because you didn't read this readme file.
 
 ## 42 Header
-Open the 42.header.env file and change the user to you login name
+Open the 42header.env file and change the user to you login name.  This should be changed before you run the container.  Make the modifications, then re-open the folder in vscode as described above in the running the Devcontainer.  You will have to reopen and rebuild the container and it will take the setting from the 42header.env file.
 
 example:
 USER=dfurneau
@@ -76,7 +76,7 @@ You should make your own .git ignore files in each of your project directories t
 
 ## SSH Keys
 You can copy your id_rsa and id_rsa.pub keys from your 42 account and copy them into the .ssh directory from this cloned repo.
-This will allow you to git your repo from 42 (on the wireless network) so you can work on it.
+This will allow you to git your repo from 42 (on the wireless network and during the shutdown) so you can work on it.
 
 Or you can use your own repo, and put your ssh keys in the .ssh directory.  This will allow you to push, commit, and pull from your own github or gitlab repository.
 
