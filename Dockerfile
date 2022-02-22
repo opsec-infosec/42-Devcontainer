@@ -42,7 +42,7 @@ RUN apt-get install --no-install-recommends \
 	'ruby' \
 	'bc' \
 	'htop' \
-    'libreadline7-dev' -y \
+    'libreadline-dev' -y \
     && apt-get clean autoclean \
     && apt-get autoremove --yes \
     && rm -rf /var/lib/{apt,dpkg,cache,log}/
