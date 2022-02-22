@@ -10,12 +10,12 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update --no-install-recommends -y
 
 RUN apt-get install --no-install-recommends \
-	'man-db' \
-	'less' \
+    'man-db' \
+    'less' \
     'build-essential' \
-	"libtool-bin" \
-    "valgrind" \
-    "gdb" \
+    'libtool-bin' \
+    'valgrind' \
+    'gdb' \
     'automake' \
     'make' \
     'ca-certificates' \
@@ -32,16 +32,16 @@ RUN apt-get install --no-install-recommends \
     'dialog' \
     'llvm' \
     'clang' \
-	'libbsd-dev' \
-	'curl' \
-	'wget' \
-	'zsh' \
-	'nano' \
-	'vim' \
-	'python3-tk' \
-	'ruby' \
-	'bc' \
-	'htop' \
+    'libbsd-dev' \
+    'curl' \
+    'wget' \
+    'zsh' \
+    'nano' \
+    'vim' \
+    'python3-tk' \
+    'ruby' \
+    'bc' \
+    'htop' \
     'libreadline-dev' -y \
     && apt-get clean autoclean \
     && apt-get autoremove --yes \
@@ -65,5 +65,5 @@ ENV DEBIAN_FRONTEND=dialog
 
 
 LABEL maintainer="Dale Furneaux <opinfosec>" \
-      version="1.2.0"
+      version="1.3.0"
 
