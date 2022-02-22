@@ -7,7 +7,7 @@
 	// Update the 'dockerComposeFile' list if you have more compose files or use different names.
 	// The .devcontainer/docker-compose.yml file contains any overrides you need/want to make.
 	"dockerComposeFile": [
-		"docker-compose.yml"
+	"docker-compose.yml"
 	],
 
 	// The 'service' property is the name of the service for the container that VS Code should
@@ -26,11 +26,11 @@
 	"extensions": [
         "ms-vscode.cpptools",
         "mariusvanwijk-joppekoers.codam-norminette-3",
-		"secondfry.42header-long",
+	"secondfry.42header-long",
         "damiankoper.gdb-debug",
-		"gurumukhi.selected-lines-count",
-		"ms-vscode.makefile-tools",
-		"mathematic.vscode-pdf",
+	"gurumukhi.selected-lines-count",
+	"ms-vscode.makefile-tools",
+	"mathematic.vscode-pdf",
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
