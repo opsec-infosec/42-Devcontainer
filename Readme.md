@@ -2,7 +2,8 @@
 # Visual Studio Devcontainer for 42
 This is a devcontainer for 42 coding with Visual Studio and docker.
 Not For Use inside the 42 Labs.  This container is for outside the labs
-on your personal PC's
+on your personal PC's, if you want to run valgrind in the labs, use the 42-Valgrind
+repo for that: https://github.com/opsec-infosec/42-ValgrindContainer
 
 ## Visual Studio Extension in Container
 * C/C++ |  InteliSense, Debugging and Code Browsing
