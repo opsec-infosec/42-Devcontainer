@@ -42,7 +42,9 @@ RUN apt-get install --no-install-recommends \
     'ruby' \
     'bc' \
     'htop' \
-    'libreadline-dev' -y \
+    'libreadline-dev' \
+	'libxext-dev' \
+	'libx11-dev' -y \
     && apt-get clean autoclean \
     && apt-get autoremove --yes \
     && rm -rf /var/lib/{apt,dpkg,cache,log}/
@@ -51,6 +53,12 @@ RUN python3 -m pip install --upgrade pip setuptools && python3 -m pip install no
 RUN sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"  \
 	&& echo 'PROMPT=%B%F{blue}[DEVCONTAINER]%f%b$PROMPT' >> /root/.zshrc \
 	&& echo 'PATH=$PATH:/usr/bin' >> /root/.zshrc
+
+RUN git clone https://github.com/42Paris/minilibx-linux.git /usr/local/minilibx-linux
+RUN cd /usr/local/minilibx-linux/ && ./configure \
+	&& cp /usr/local/minilibx-linux/*.a /usr/local/lib \
+	&& cp /usr/local/minilibx-linux/*.h /usr/local/include \
+	&& /sbin/ldconfig
 
 RUN mkdir -p /home/vscode/src && mkdir -p /root/.ssh
 
