@@ -27,7 +27,7 @@ repo for that: https://github.com/opsec-infosec/42-ValgrindContainer
 * pkg-config
 * Valgrind
 * htop
-* libreadline6-dev
+* libreadline8-dev
 * libxext-dev
 * libx11-dev
 * minilibx-linux (under /usr/local/minilibx-linux)
