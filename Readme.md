@@ -89,7 +89,7 @@ This will allow you to git your repo from 42 (on the wireless network and during
 
 Or you can use your own repo, and put your ssh keys in the .ssh directory.  This will allow you to push, commit, and pull from your own github or gitlab repository.
 
-## Seperate Terminal Usag (Advanced)
+## Seperate Terminal Usage (Advanced)
 You can also open a terminal and connect to the running container (launched from vscode) and issue commands to the container.  To do this, first esecute: docker ps
 
 and take note of the 42-Devcontainer name.  It should be somehthing like 42-devcontainer_devcontainer_development_1.
