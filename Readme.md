@@ -105,7 +105,7 @@ events can be forwarded to it, replace YOUR_IP_ADDRESS with your own ip address.
 
 export DISPLAY YOUR_IP_ADDRESS:0.0
 
-OR you can add the above to your task.json file under .vscode like:
+OR you can add the above to your task.json (thanks Mekky) file under .vscode like:
 
 "environment": [{"name": "DISPLAY", "value": "YOUR IP ADDRESS:0.0" }],
 
