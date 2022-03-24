@@ -102,7 +102,7 @@ Assuming that the container name is 42-devcontainer_devcontainer_development_1
 You will need an Xserver (such as XQuartz for Mac or vxcsrv for Windows)
 Within the devcontainer you will have to export your environmental display and forward that to your
 host computer running the devcontainer.  You will need the IP address of your mahcine (it's not 127.0.0.1) so
-events can be forwarded to it, replace YOUR_IP_ADDRESS with your own ip address.  Then in the devcontainer you will export the DISPLAY variable like:
+events can be forwarded to it, replace YOUR_IP_ADDRESS with your own ip address.  Then in the devcontainer terminal you will export the DISPLAY variable like:
 
 export DISPLAY YOUR_IP_ADDRESS:0.0
 
@@ -110,7 +110,7 @@ OR you can add the above to your task.json file under .vscode like (thanks Mekky
 
 "environment": [{"name": "DISPLAY", "value": "YOUR IP ADDRESS:0.0" }],
 
-Minilibx-linux is already cloned and installed within the devcontainer.  The source files can be found in /usr/local/minilib-linux.  The library (.a) files have already been copied to /usr/local/lib and the header files are located under /usr/local/include.  If there are changes to the github minilibx you can pull them down by going into the /usr/local/minilibx-linux directory and executing a: git pull, this will pull the latest updates.  You will then have to do ./configure to re-compile the library and cp *.a /usr/local/lib && cp *.h /usr/local/include.  You can copy the /usr/local/minilibx-linux directory into your project if needed.
+Minilibx-linux is already cloned and installed within the devcontainer.  The source files can be found in /usr/local/minilibx-linux.  The library (.a) files have already been copied to /usr/local/lib and the header files are located under /usr/local/include.  If there are changes to the github minilibx you can pull them down by going into the /usr/local/minilibx-linux directory and executing a: git pull, this will pull the latest updates.  You will then have to do ./configure to re-compile the library and cp *.a /usr/local/lib && cp *.h /usr/local/include.  You can copy the /usr/local/minilibx-linux directory into your project if needed.
 
 A note about using minilibx-linux... The keycodes within the devcontainer are not the same as they are on a mac... So be sure to take this into account if you plan on submitting your project in the 42 labs and plan for your project to be evaluated under mac osx.  You could do a conditional make file and include a -D flag to determine if your running in OSX or Linux and adjust the keycodes in your source... but this is beyond the scope of this document.
 
