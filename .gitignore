@@ -12,7 +12,7 @@ a.out
 .gitconfig
 .ssh/*
 !.ssh/readme.txt
-
+/src/.vscode/*.log
 
 
 
