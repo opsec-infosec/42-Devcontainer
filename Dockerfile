@@ -68,7 +68,7 @@ RUN git clone https://github.com/42Paris/minilibx-linux.git /usr/local/minilibx-
 RUN cd /usr/local/minilibx-linux/ && ./configure \
 	&& cp /usr/local/minilibx-linux/*.a /usr/local/lib \
 	&& cp /usr/local/minilibx-linux/*.h /usr/local/include \
-	&& cp -R /usr/local/minilibx-linux/man /usr/local/man \
+	&& cp -R /usr/local/minilibx-linux/man/ /usr/local/man \
 	&& /sbin/ldconfig
 
 # SSH Keys
