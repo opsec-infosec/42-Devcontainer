@@ -100,8 +100,8 @@ Assuming that the container name is 42-devcontainer_devcontainer_development_1
 
 ## Running Graphics (Advanced)
 You will need an Xserver (such as XQuartz for Mac or vxcsrv for Windows)
-Within the devcontainer you will have to export your environmental display and forward that tor your
-host computer running the devcontainer.  You will need the IP address of your mahcine (its not 127.0.0.1) so
+Within the devcontainer you will have to export your environmental display and forward that to your
+host computer running the devcontainer.  You will need the IP address of your mahcine (it's not 127.0.0.1) so
 events can be forwarded to it, replace YOUR_IP_ADDRESS with your own ip address.  Then in the devcontainer you will export the DISPLAY variable like:
 
 export DISPLAY YOUR_IP_ADDRESS:0.0
