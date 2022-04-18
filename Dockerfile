@@ -60,11 +60,10 @@ RUN python3 -m pip install --upgrade pip setuptools && python3 -m pip install no
 
 # OhMyZsh Install, set prompt to DEVCONTAINER
 RUN sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"  \
-	&& echo 'PROMPT=%B%F{blue}[DEVCONTAINER]%f%b$PROMPT' >> /root/.zshrc \
-	&& echo 'PATH=$PATH:/usr/bin' >> /root/.zshrc
+	&& echo 'PROMPT=%B%F{blue}[DEVCONTAINER]%f%b$PROMPT' >> /root/.zshrc
 
 # Add Return Code in prompt for bash
-RUN echo 'PS1='[`echo -n $?`]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '' >> /root/.bashrc
+ENV PROMPT_COMMAND='RET=$?; echo -n "[$RET] "'
 
 # minilibx-linux source and install
 RUN git clone https://github.com/42Paris/minilibx-linux.git /usr/local/minilibx-linux
