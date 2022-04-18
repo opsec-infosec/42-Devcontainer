@@ -63,6 +63,9 @@ RUN sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh
 	&& echo 'PROMPT=%B%F{blue}[DEVCONTAINER]%f%b$PROMPT' >> /root/.zshrc \
 	&& echo 'PATH=$PATH:/usr/bin' >> /root/.zshrc
 
+# Add Return Code in prompt for bash
+RUN echo "PS1='[`echo -n $?`]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '" >> /root/.bashrc
+
 # minilibx-linux source and install
 RUN git clone https://github.com/42Paris/minilibx-linux.git /usr/local/minilibx-linux
 RUN cd /usr/local/minilibx-linux/ && ./configure \
@@ -86,4 +89,3 @@ ENV DEBIAN_FRONTEND=dialog
 
 LABEL maintainer="Dale Furneaux <opinfosec>" \
       version="2.0.0"
-
