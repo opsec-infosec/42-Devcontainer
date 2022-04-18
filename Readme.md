@@ -20,7 +20,7 @@ repo for that: https://github.com/opsec-infosec/42-ValgrindContainer
 * gdb
 * python3
 * pip
-* norminette (pip module)
+* [norminette](https://github.com/42School/norminette) (pip module)
 * zip
 * unzip
 * libtool
@@ -30,7 +30,7 @@ repo for that: https://github.com/opsec-infosec/42-ValgrindContainer
 * libreadline8-dev
 * libxext-dev
 * libx11-dev
-* minilibx-linux (under /usr/local/minilibx-linux)
+* [minilibx-linux](https://github.com/42Paris/minilibx-linux) (under /usr/local/minilibx-linux)
 
 
 ## Installation Requirments
