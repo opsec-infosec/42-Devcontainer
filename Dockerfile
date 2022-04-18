@@ -64,7 +64,7 @@ RUN sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh
 	&& echo 'PATH=$PATH:/usr/bin' >> /root/.zshrc
 
 # Add Return Code in prompt for bash
-RUN echo "PS1='[`echo -n $?`]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '" >> /root/.bashrc
+RUN echo 'PS1='[`echo -n $?`]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '' >> /root/.bashrc
 
 # minilibx-linux source and install
 RUN git clone https://github.com/42Paris/minilibx-linux.git /usr/local/minilibx-linux
