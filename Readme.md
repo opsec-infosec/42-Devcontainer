@@ -74,15 +74,15 @@ USER=dfurneau
 This will create a header for dfurneau.  Change the dfurneau to your user login name, reopen and rebuild the container.
 
 ## User and Directory Structure
-The directory opened (workspac) in vscode will be located under /home/vscode/src
+The directory opened (workspace) in vscode will be located under /home/vscode/src in the container.
 
-The /home/vscode/src container directory is mapped to the /src directory on your host machine.  This means any changes done in the container will be reflected on your host and will be saved locally.
+The /home/vscode/src container directory is mapped to the .../42-Devcontainer/src directory on your host machine.  This means any changes done in the container will be reflected on your host and will be saved locally.
 
-You should use the Cursus directory for your projects and create different folders for each project.. for example /src/Cursus/libft for the libft project.
+You should use the Cursus directory for your projects and create different folders for each project.. for example .../42-Devcontainer/src/Cursus/libft for the libft project.
 
 Once you make a directory for your project... You can open the folder within vscode after running the container, by going to file->open folder .. then go to /home/vscode/src/Cursus/your_project_folder.  Vscode will keep the devcontainer loaded and open the folder.  You can then start coding and making your project files.
 
-A sample helloworld.c program is available to verify the debugger and enviroment is running correctly.
+A sample helloworld.c program located in /home/vscode/src in the container and .../42-Devcontainer/src on your host is available to verify the debugger and enviroment is running correctly.
 
 ## git
 You should make your own .git ignore files in each of your project directories to exclude files from your repository.  For example a.out, .DS_Store, *.dSYM
@@ -98,7 +98,7 @@ You can also open a terminal and connect to the running container (launched from
 
 and take note of the 42-Devcontainer name.  It should be somehthing like 42-devcontainer_devcontainer_development_1.
 
-To launch into the container, issue the following command: docker exec -it 42-devcontainer_devcontainer_development_1 /bin/zsh
+To launch into the container, issue the following command: docker exec -it 42-devcontainer_devcontainer_development_1 /bin/zsh  This will launch a zsh.
 Assuming that the container name is 42-devcontainer_devcontainer_development_1
 
 ## Running Graphics (Advanced)
