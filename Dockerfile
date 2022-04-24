@@ -40,6 +40,7 @@ RUN apt-get install --no-install-recommends \
     'zsh' \
     'nano' \
     'vim' \
+	'moreutils' \
 	# Push Swap Projects
     'python3-tk' \
     'ruby' \
