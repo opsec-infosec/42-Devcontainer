@@ -47,10 +47,10 @@ In order to use this devcontainer you must install the following on your machine
 ### Required Extension of VSCode
 Make sure you have the following extension install within vscode
 
-* Remote - Containers (Microsoft)
+* Dev Containers (Microsoft)
+* WSL (Microsoft)
 * Remote - SSH (Microsoft)
 * Remote - SSH: Editing Configuration Files (Microsoft)
-* Remote - WSL (Microsoft)
 * Remote Development (Microsoft)
 * Docker (Microsoft)
 
