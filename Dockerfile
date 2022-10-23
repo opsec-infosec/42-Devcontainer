@@ -86,6 +86,9 @@ WORKDIR /home/vscode
 COPY ./src/ ./src/
 WORKDIR /home/vscode/src
 
+# Export Display for XServer Forwarding
+RUN echo "export DISPLAY=host.docker.internal:0.0" >> /root/.bashrc && echo "export DISPLAY=host.docker.internal:0.0" >> /root/.zshrc
+
 # Reset dialog frontend
 ENV DEBIAN_FRONTEND=dialog
 

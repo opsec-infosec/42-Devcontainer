@@ -102,10 +102,16 @@ To launch into the container, issue the following command: docker exec -it 42-de
 Assuming that the container name is 42-devcontainer_devcontainer_development_1
 
 ## Running Graphics (Advanced)
+### UPDATE
+Exporting the display is now automatically set in the .zshrc and .bashrc using host.docker.internal:0.0 during build and starting of the container
+You should no longer need to export the DISPLAY environmental variable in order to forward X11 events to the host X11Server.
+
 You will need an Xserver (such as XQuartz for Mac or vxcsrv for Windows)
 Within the devcontainer you will have to export your environmental display and forward that to your
 host computer running the devcontainer.  You will need the IP address of your mahcine (it's not 127.0.0.1) so
 events can be forwarded to it, replace YOUR_IP_ADDRESS with your own ip address.  Then in the devcontainer terminal you will export the DISPLAY variable like:
+
+### DEPRICATED Export instructions
 
 export DISPLAY YOUR_IP_ADDRESS:0.0
 
