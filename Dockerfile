@@ -96,4 +96,4 @@ ENV DEBIAN_FRONTEND=dialog
 
 
 LABEL maintainer="Dale Furneaux <opinfosec>" \
-    version="2.1.0"
+    version="2.2.0"
