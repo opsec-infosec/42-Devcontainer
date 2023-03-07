@@ -53,7 +53,10 @@ RUN apt-get install --no-install-recommends \
     'libxext-dev' \
     'libx11-dev' \
     # IRC Project Test Example
-    "netcat" -y \
+    "netcat" \
+    "tcpdump" \ 
+    #"wireshark" \
+    -y \
     && apt-get clean autoclean \
     && apt-get autoremove --yes \
     && rm -rf /var/lib/{apt,dpkg,cache,log}/
