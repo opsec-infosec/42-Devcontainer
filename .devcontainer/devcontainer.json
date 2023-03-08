@@ -24,13 +24,15 @@
 
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
-        "ms-vscode.cpptools",
-        "mariusvanwijk-joppekoers.codam-norminette-3",
-	"secondfry.42header-long",
-        "damiankoper.gdb-debug",
-	"gurumukhi.selected-lines-count",
-	"ms-vscode.makefile-tools",
-	"mathematic.vscode-pdf",
+		"ms-vscode.cpptools",
+		"mariusvanwijk-joppekoers.codam-norminette-3",
+		"secondfry.42header-long",
+		"damiankoper.gdb-debug",
+		"gurumukhi.selected-lines-count",
+		"ms-vscode.makefile-tools",
+		"mathematic.vscode-pdf",
+		"llvm-vs-code-extensions.vscode-clangd",
+		"eamodio.gitlens"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
