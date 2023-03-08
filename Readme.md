@@ -16,6 +16,8 @@ repo for that: https://github.com/opsec-infosec/42-ValgrindContainer
 * Selected Line Count | [Line Count Extenstion](https://github.com/gurumukhi/vscode-extension-line-count) by Ram Gurumukhi
 * Makefile Tools | Microsoft
 * PDF Viewer | Mathematic
+* Clangd | [LLVM](https://clangd.llvm.org/)
+* Gitlens | [GitKraken](https://www.gitkraken.com/gitlens)
 
 ## Installed Linux Packages
 * gcc
