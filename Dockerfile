@@ -55,7 +55,7 @@ RUN apt-get install --no-install-recommends \
     # IRC Project Test Example
     "irssi" \
     "netcat" \
-    "tcpdump" \ 
+    "tcpdump" \
     #"wireshark" \
     -y \
     && apt-get clean autoclean \
@@ -71,6 +71,10 @@ RUN sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh
 
 # Add Return Code in prompt for bash
 ENV PROMPT_COMMAND='RET=$?; echo -n "[$RET] "'
+
+# Add clangd
+RUN wget https://github.com/clangd/clangd/releases/download/15.0.6/clangd-linux-15.0.6.zip && unzip clangd-linux-15.0.6.zip && cp ./clangd_15.0.6/bin/clangd /usr/local/bin && cp -rd ./clangd_15.0.6/lib/clang/ /usr/local/lib/
+COPY ./.devcontainer/settings.json /root/.vscode-server/data/Machine/settings.json
 
 # minilibx-linux source and install
 RUN git clone https://github.com/42Paris/minilibx-linux.git /usr/local/minilibx-linux
@@ -100,4 +104,4 @@ ENV DEBIAN_FRONTEND=dialog
 
 
 LABEL maintainer="Dale Furneaux <opinfosec>" \
-    version="2.3.0"
+    version="3.0.0"
