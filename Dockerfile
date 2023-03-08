@@ -53,6 +53,7 @@ RUN apt-get install --no-install-recommends \
     'libxext-dev' \
     'libx11-dev' \
     # IRC Project Test Example
+    "irssi" \
     "netcat" \
     "tcpdump" \ 
     #"wireshark" \
