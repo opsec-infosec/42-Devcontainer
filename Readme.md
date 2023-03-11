@@ -32,6 +32,10 @@ repo for that: https://github.com/opsec-infosec/42-ValgrindContainer
 * pkg-config
 * Valgrind
 * htop
+* irssi
+* netcat
+* tcpdump
+* net-tools
 * libreadline8-dev
 * libxext-dev
 * libx11-dev

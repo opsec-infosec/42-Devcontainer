@@ -53,9 +53,10 @@ RUN apt-get install --no-install-recommends \
     'libxext-dev' \
     'libx11-dev' \
     # IRC Project Test Example
-    "irssi" \
-    "netcat" \
-    "tcpdump" \
+    'irssi' \
+    'netcat' \
+    'tcpdump' \
+    'net-tools' \
     #"wireshark" \
     -y \
     && apt-get clean autoclean \
@@ -104,4 +105,4 @@ ENV DEBIAN_FRONTEND=dialog
 
 
 LABEL maintainer="Dale Furneaux <opinfosec>" \
-    version="3.0.1"
+    version="3.0.2"
